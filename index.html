@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link type="text/css" href="stylesheets/estilo.css" rel="stylesheet">
+
+</head>
+
+<body onload="init();">
+    <main>
+        <div class="container">
+            <div class="pantalla">
+                <p id="procedimiento">_</p>
+                <p id="resultado"></p>
+            </div>
+            <div class="botones">
+
+                <button onclick="botonNumero(this);">7</button>
+                <button onclick="botonNumero(this);">8</button>
+                <button onclick="botonNumero(this);">9</button>
+                <button onclick="operador(this);">/</button>
+
+                <button onclick="botonNumero(this);">4</button>
+                <button onclick="botonNumero(this);">5</button>
+                <button onclick="botonNumero(this);">6</button>
+                <button onclick="operador(this);">*</button>
+
+                <button onclick="botonNumero(this);">1</button>
+                <button onclick="botonNumero(this);">2</button>
+                <button onclick="botonNumero(this);">3</button>
+                <button onclick="operador(this);">-</button>
+
+                <button id="igual">=</button>
+                <button id="reset">C</button>
+                <button onclick="botonNumero(this);">0</button>
+                <button onclick="operador(this);">+</button>
+
+            </div>
+            <script src="js/funcionalidad.js"></script>
+        </div>
+    </main>
+
+</body>
+
+</html>
